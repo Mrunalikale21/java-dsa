@@ -79,7 +79,7 @@ public class BST {
       }
 
       //case 3
-      Node IS = inorderSuccessor(root.right);
+      Node IS = inorderSuccessor(root.right); //IS is inorder successor;
       root.data = IS.data;
       root.right = delete(root.right, IS.data);
     }
